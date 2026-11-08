@@ -1,169 +1,133 @@
-# Awesome-Warehouse-Management-System-WMS
+# Awesome Warehouse Management System (WMS) 📦⚡
 
-# Awesome Warehouse Management System (WMS)
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Warehouse Management System (WMS) Banner" width="100%" />
+</p>
 
-> A curated list of top Warehouse Management System (WMS) platforms — both SaaS/Hosted commercial solutions and open-source alternatives for managing inventory, fulfillment, and warehouse operations.  
-> 🌟 Star this repo if you find it useful! 🌟
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-Lists-fc60a8?style=flat-square&logo=awesomelists" alt="Awesome Lists" /></a>
+  <a href="https://creativecommons.org/publicdomain/zero/1.0/"><img src="https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg" alt="License: CC0-1.0" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
----
-
-## 📋 Table of Contents
-
-- [SaaS / Hosted Platforms](#-saas--hosted-platforms)
-  - [Manhattan Active Warehouse Management](#manhattan-active-warehouse-management)
-  - [Blue Yonder WMS](#blue-yonder-wms)
-  - [Infor CloudSuite WMS](#infor-cloudsuite-wms)
-  - [Körber (Infios Warehouse Edge)](#körber-infios-warehouse-edge)
-  - [Zoho Inventory](#zoho-inventory)
-  - [Oracle NetSuite WMS](#oracle-netsuite-wms)
-  - [Fishbowl Warehouse](#fishbowl-warehouse)
-  - [Logiwa IO](#logiwa-io)
-  - [ShipHero](#shiphero)
-  - [Deposco](#deposco)
-- [Open-Source Software](#-open-source-software)
-  - [GreaterWMS](#greaterwms)
-  - [OpenBoxes](#openboxes)
-  - [OpenWMS.org](#openwmsorg)
-  - [myWMS](#mywms)
-  - [OCA WMS (Odoo)](#oca-wms-odoo)
-  - [frePPLe](#frepple)
-- [Comparison at a Glance](#-comparison-at-a-glance)
-- [Contributing](#-contributing)
+> 🌟 **A curated directory of top Warehouse Management System (WMS) solutions** — comparing enterprise SaaS platforms and self-hosted open-source software for inventory control, automated picking & packing, 3PL client billing, barcode/RFID scanning, and robotics orchestration. 🚀✨
 
 ---
 
-## 🟦 SaaS / Hosted Platforms
+## 📋 Table of Contents 📑
 
-Commercial, cloud-hosted Warehouse Management System platforms. These are not open-source but are included as reference points for feature comparison.
-
-### Manhattan Active Warehouse Management
-**Type:** Cloud-native enterprise WMS  
-Manhattan Active WM is the industry's first cloud-native WMS, built entirely on microservices for effortless extensibility and continuous innovation [citation:4]. Named a Leader in the Gartner Magic Quadrant for WMS for the 18th consecutive time. The platform includes commercially released AI agents (January 2026) that autonomously analyze, decide, and execute workflows — warehouse-focused agents continuously monitor work queues, automation, and inventory to anticipate issues and optimize task orchestration, while a Labor Agent provides cross-department guidance on workforce deployment [citation:4]. Scales from mid-complexity warehouses to the world's largest distribution centers.  
-**Best for:** Enterprises needing a proven, AI-augmented, cloud-native WMS that scales to the largest and most complex operations.
-
-### Blue Yonder WMS
-**Type:** Enterprise WMS with AI and pull-based streaming  
-Blue Yonder's 2025.4 release introduced pull-based streaming that eliminates batches and turns orders into a continuous stream based on critical workflow needs, sequencing and releasing orders according to real-time capacity [citation:5]. Enhanced AI/ML capabilities include explainability, dynamic slotting, and work optimization. The Warehouse Ops Agent provides intraday task and labor forecasts with explanations, pre-shift briefs, resource swap recommendations, and dynamic slotting adjustments. Camera-based yard tracking automates trailer visibility, replacing manual audits [citation:5].  
-**Best for:** Enterprises seeking AI-driven operational intelligence with capacity-aware, continuous order flow.
-
-### Infor CloudSuite WMS
-**Type:** Multi-owner, multi-facility enterprise WMS  
-Infor CloudSuite WMS manages distribution center activities holistically for one location or dozens, combining warehouse fulfillment with embedded labor management and 3D visual analysis for a shorter learning curve [citation:12]. Features include appointment scheduling, directed put-away, returns, cross-docking, flow-through, voice/RF/e-commerce/kitting/allocation support, and customer-level costing, billing, and invoicing. Deployable on-premises or in the cloud [citation:12].  
-**Best for:** 3PLs and multi-owner operations needing embedded labor management and 3D visualization with flexible deployment.
-
-### Körber (Infios Warehouse Edge)
-**Type:** End-to-end WMS with automation and voice  
-Infios Warehouse Edge (formerly Körber K.Motion Warehouse Edge and HighJump WMS) provides full visibility into inventory, people, and processes with slotting/re-slotting algorithms, automatic consolidation, cross-docking, and real-time bin utilization [citation:6]. Integrates with AMRs and voice solutions for hands-free task guidance. Analytics and reporting include real-time KPI dashboards and drill-down charts. Integrates with major ERP, transportation, and yard management systems [citation:6].  
-**Best for:** Operations wanting a proven WMS with strong automation integration (AMR, voice) and ERP connectivity.
-
-### Zoho Inventory
-**Type:** Cloud inventory and warehouse management for SMBs  
-Zoho Inventory provides multi-warehouse management, bin-level stock organization, barcode scanning, picklists, and stock counts without halting operations [citation:3]. Real-time visibility across locations and sales channels, with built-in audit trails and approval workflows. Integrated with Zoho's broader ecosystem (Books, CRM) and supports Shopify, Amazon, and other channels.  
-**Best for:** Small to mid-sized businesses wanting affordable, cloud-based warehouse inventory management with multi-channel support.
-
-### Oracle NetSuite WMS
-**Type:** WMS within NetSuite ERP  
-NetSuite WMS provides warehouse management within the broader NetSuite ERP suite. The 2026v1 release includes enhancements for searching kit/package items, manual item receipt posting, reversal of inbound shipment receiving, zero quantity picks, and landed cost receiving . Suited for organizations already standardized on NetSuite for ERP and financials.  
-**Best for:** NetSuite ERP customers wanting WMS functionality native to their existing platform.
-
-### Fishbowl Warehouse
-**Type:** SMB WMS with QuickBooks integration  
-Fishbowl provides warehouse management for small and mid-size businesses with real-time inventory tracking, barcode scanning, pick/pack/ship, and multi-location support [citation:8]. The standout feature is seamless QuickBooks integration, keeping stock levels and financial records in sync automatically. Trusted by over 6,000 manufacturers, distributors, and product companies. Implementation takes 2–6 weeks with per-user pricing and no volume caps [citation:8].  
-**Best for:** SMBs running QuickBooks needing a WMS layer with strong accounting integration and reasonable implementation timelines.
-
-### Logiwa IO
-**Type:** Cloud-native WMS for high-volume 3PL and DTC  
-Logiwa IO is architected specifically for high-velocity, multi-tenant, parcel-driven ecommerce fulfillment [citation:9]. Features include native 3PL billing infrastructure (contract-governed multi-tenant billing, dimensional accuracy, VAS capture, automated margin management), AI-driven batching and path optimization (up to 25% pick throughput increase), algorithmic labor standards, and directed putaway logic. Deployment takes 4–6 weeks with no-code configuration for 90–95% of use cases [citation:9].  
-**Best for:** 3PLs and high-volume DTC operations needing rapid deployment, native billing, and ecommerce-optimized fulfillment.
-
-### ShipHero
-**Type:** WMS for scaling 3PLs and DTC brands  
-ShipHero provides real-time inventory tracking, automated putaway, mobile pick/pack with barcode scanning and smart routes, order management with returns and carrier rate shopping, and built-in reporting [citation:10]. Integrates with 150+ global carriers through Shiptheory for label automation. Barcode scanning accelerates workflows and verifies order accuracy at every step, reducing mis-picks and mis-shipments [citation:10].  
-**Best for:** Growing 3PLs and DTC brands needing scalable, scanner-driven warehouse operations with strong carrier integrations.
-
-### Deposco
-**Type:** AI-powered WMS with MHE integrations  
-Deposco's WMS includes Order Fulfillment Profiles for grouping, batching, and strategically allocating orders before pick wave release, plus advanced Directed Putaway intelligence that minimizes travel distances and optimizes space utilization [citation:11]. Pre-configured integrations with over a dozen MHE systems including ASRS, cobots, and AGVs (AutoStore, Locus Robotics). SCI solutions provide shipping optimization (up to 5% freight spend reduction) and root cause analysis [citation:11].  
-**Best for:** Operations investing in warehouse automation (ASRS, AMRs) needing pre-built MHE integrations and AI-driven optimization.
+- [Sector Overview & Market Dynamics 🌐](#-sector-overview--market-dynamics-)
+- [SaaS / Hosted Platforms 🟦](#-saas--hosted-platforms-)
+- [Open-Source Software 🟩](#-open-source-software-)
+- [Comparison at a Glance 📊](#-comparison-at-a-glance-)
+- [📈 Star History](#-star-history)
+- [💖 Support & Community 🙏](#-support--community-)
+- [🤝 Contributing 💡](#-contributing-)
+- [📄 License ⚖️](#-license-️)
 
 ---
 
-## 🟩 Open-Source Software
+## 🌐 Sector Overview & Market Dynamics 📈
 
-Self-hosted, community-driven Warehouse Management Systems. All listed projects offer source code you can deploy on your own infrastructure.
-
-### GreaterWMS
-**Stack:** Python / Django / Quasar (Vue.js) | **License:** Open Source (per repository)  
-A highly customizable open-source WMS rebuilt with the Bomiot framework (Rust core) in version 3.0, featuring a plugin architecture and app marketplace [citation:13]. Designed for customization: frontend-backend separation (Django REST Framework + Quasar) enables independent evolution, modular business logic (ASN receiving, DN shipping, inventory, storage locations) allows modifying only needed modules, and the OneAPP concept serves PDAs, mobile apps, desktops, and websites from the same backend [citation:13]. Real-world deployments span 3PL/cloud warehouses, pharmaceutical distribution (inventory turnover days reduced from 45 to 28), cold-chain, cross-border e-commerce, and manufacturing (25% inventory turnover improvement).  
-**Best for:** Organizations wanting a highly customizable open-source WMS foundation that can be adapted to 3PL, pharma, cold-chain, or manufacturing without vendor lock-in.
-
-### OpenBoxes
-**Stack:** (Check repository) | **License:** Open Source (per project)  
-OpenBoxes is a warehouse management system designed to manage inventory and track stock movements specifically for healthcare facilities [citation:2]. 919 GitHub stars with active maintenance (updated weekly). Suited for hospitals, clinics, and public health supply chains needing traceability and stock visibility.  
-**Best for:** Healthcare facilities and public health organizations needing inventory management tailored to medical supplies.
-
-### OpenWMS.org
-**Stack:** Java | **License:** Open Source (per project)  
-A reference open-source WMS implementation with 754 GitHub stars, updated recently [citation:2]. Focuses on core warehouse processes with a modular approach. While not as actively developed as larger ERP-anchored projects, it remains a reference implementation for basic WMS concepts. Modern integrations often require custom adapters [citation:14].  
-**Best for:** Learning, proofs of concept, or small sites with simple, stable processes and tolerance for DIY integrations.
-
-### myWMS
-**Stack:** Java | **License:** Open Source (per project)  
-A classic open-source WMS with 131 GitHub stars, updated recently [citation:2]. Focused on core warehouse management functionality. A branch (salimvanak/mywms) also exists. Suited for small to mid-sized operations needing a straightforward Java-based WMS.  
-**Best for:** Java-centric teams wanting a simple, self-hosted WMS foundation.
-
-### OCA WMS (Odoo)
-**Stack:** Python (Odoo) | **License:** AGPL-3.0 (Odoo Community)  
-The Odoo Community Association's WMS modules extend Odoo's inventory capabilities with advanced logistic features [citation:2]. 226 GitHub stars, updated recently. Leverages Odoo's broader ERP ecosystem while adding warehouse-specific functionality.  
-**Best for:** Organizations already using Odoo Community needing advanced WMS capabilities within the same platform.
-
-### frePPLe
-**Stack:** Python / PostgreSQL | **License:** Open Source (per project)  
-An open-source supply chain planning platform with 771 GitHub stars, updated recently [citation:2]. While not a pure WMS, it provides production planning, distribution planning, and inventory optimization that complements warehouse execution.  
-**Best for:** Organizations needing supply chain planning (demand, inventory, production) alongside or upstream of warehouse execution.
+The global Warehouse Management System (WMS) market is estimated at **$4.0 billion to $4.8 billion in 2026** (expanding toward $10+ billion by the early 2030s at an aggressive CAGR of ~15–19%), accelerated by omnichannel e-commerce fulfillment, autonomous mobile robots (AMRs), and AI-driven supply chain automation. The sector exhibits a **moderately concentrated yet hybrid market structure**: an enterprise oligopoly of tier-1 tech giants (Oracle, Manhattan Associates, Blue Yonder, Infor, and Körber) commands roughly 35–42% of global market share, while a vibrant, fragmented long-tail of specialized 3PL cloud platforms and active open-source ecosystems caters to SMBs, regional distributors, and agile digital brands. 🏬🤖
 
 ---
 
-## 📊 Comparison at a Glance
+## 🟦 SaaS / Hosted Platforms ☁️
 
-| Software | License | Type | Deployment | Best For |
-|----------|---------|------|------------|----------|
-| **Manhattan Active WM** | Proprietary | Cloud-native enterprise | SaaS | Largest, most complex DCs |
-| **Blue Yonder WMS** | Proprietary | Enterprise + AI | SaaS | AI-driven continuous flow |
-| **Infor CloudSuite WMS** | Proprietary | Multi-owner enterprise | SaaS/on-prem | 3PLs + labor management |
-| **Körber Infios** | Proprietary | Automation + voice | SaaS/on-prem | AMR/voice integration |
-| **Zoho Inventory** | Proprietary | SMB cloud WMS | SaaS | Affordable multi-channel |
-| **NetSuite WMS** | Proprietary | ERP-integrated | SaaS | NetSuite ERP customers |
-| **Fishbowl** | Proprietary | SMB + QuickBooks | SaaS/on-prem | QuickBooks users |
-| **Logiwa IO** | Proprietary | 3PL/DTC cloud WMS | SaaS | Rapid 3PL deployment |
-| **ShipHero** | Proprietary | 3PL/DTC WMS | SaaS | Scanner-driven fulfillment |
-| **Deposco** | Proprietary | AI + MHE WMS | SaaS | Automation-heavy operations |
-| **GreaterWMS** | Open Source | Customizable OSS WMS | Self-hosted | Deep customization + no lock-in |
-| **OpenBoxes** | Open Source | Healthcare WMS | Self-hosted | Hospitals + public health |
-| **OpenWMS.org** | Open Source | Reference OSS WMS | Self-hosted | Learning / simple sites |
-| **myWMS** | Open Source | Java OSS WMS | Self-hosted | Simple Java-based WMS |
-| **OCA WMS (Odoo)** | AGPL-3.0 | Odoo WMS modules | Self-hosted | Odoo Community users |
-| **frePPLe** | Open Source | Supply chain planning | Self-hosted | Planning upstream of WMS |
+Commercial, cloud-hosted Warehouse Management System platforms. Sorted in descending order by company scale (market capitalization, valuation, or parent company annual revenue). 🏢📊
+
+| Platform 🚀 | Company Scale / Valuation 💰 | Starting Pricing Tier 🏷️ | Free Tier / Free Trial Limits 🎁 | Key Capabilities & Architecture 🛠️ |
+|:---|:---|:---|:---|:---|
+| **[Oracle NetSuite WMS](https://www.netsuite.com/portal/products/erp/warehouse-management-system.shtml)** | **~$380B Market Cap** *(Oracle Corp / $53B+ ARR)* | **~$1,999/month** *(~$999/mo base ERP + $1,000/mo WMS module, billed annually)* | **No free tier**; 14-to-30 day guided demo sandbox upon sales approval (pre-populated demo data, no live hardware/scanner sync) | Native ERP integration, RF mobile picking/putaway, multi-location inventory, wave release, cross-docking, and landed-cost calculation. |
+| **[Blue Yonder WMS](https://blueyonder.com/solutions/warehouse-management)** | **~$28B Valuation** *(Subsidiary of Panasonic Holdings / $58B+ ARR)* | **~$20,000/month** *($240,000/year enterprise license baseline)* | **No free tier**; structured guided enterprise proof-of-concept (PoC) demo on request (no self-serve trial) | Microservices-based SaaS, pull-based streaming order release, dynamic slotting AI, camera-based yard management, and AMR robotics coordination. |
+| **[Infor CloudSuite WMS](https://www.infor.com/products/cloudsuite-wms)** | **~$13B Valuation** *(Subsidiary of Koch Industries / $125B+ ARR)* | **~$3,000/month** *(Typically ~$150–$350/user/mo with minimum seat volume commitments)* | **No free tier**; custom sandbox pilot arranged for qualified enterprise RFPs (no public trial) | Tier-1 multi-tenant distribution DC management, 3D visual warehouse analysis, embedded labor management, 3PL customer billing, and voice/RF picking. |
+| **[Manhattan Active Warehouse Management](https://www.manh.com/products/warehouse-management)** | **~$12.5B Market Cap** *(NASDAQ: MANH / ~$1.0B ARR)* | **~$15,000/month** *(~$180,000/year per distribution center; or ~$2,000/user/year)* | **No free tier**; enterprise interactive sandbox environment accessible via sales executive demonstration only | 100% microservices cloud-native architecture, autonomous warehouse AI agents, unified distribution & transportation orchestration, continuous zero-downtime upgrades. |
+| **[Zoho Inventory](https://www.zoho.com/inventory/)** | **~$1.2B Annual Revenue** *(Zoho Corporation, bootstrapped)* | **$29/month** *(billed annually; or $39/mo billed monthly)* | **Free forever plan**: 50 orders/month, 50 shipping labels/month, 1 user, 1 warehouse location; or 14-day free trial of all paid features | Lightweight multi-channel inventory control, barcode generation/scanning, serial & batch tracking, Shopify/Amazon connectors, and automated purchase orders. |
+| **[Körber (Infios Warehouse Edge)](https://www.koerber-supplychain-software.com/)** | **~$1.0B+ Revenue** *(Körber Supply Chain Software / Körber AG Group)* | **~$3,500/month** *(Implementation & licensing starting from ~$150,000 total first year)* | **No free tier**; interactive simulated warehouse walkthrough via specialized solutions architect (no public self-serve trial) | Formerly HighJump WMS; advanced AMR/cobot fleet orchestration, voice-directed picking (Vocollect), dynamic cold-chain and 3PL multi-client workflows. |
+| **[Deposco (Bright Suite)](https://www.deposco.com/)** | **~$800M Valuation** *(Backed by Generation Investment Management & Rubicon)* | **~$2,500/month** *(Starting tier based on order throughput and core modules)* | **No free tier**; custom vendor evaluation sprint and tailored sandbox demo (no self-serve free trial) | Lightspeed rapid deployment (4–8 weeks), Bright Warehouse AI batch wave routing, pre-built integrations with AutoStore/Locus Robotics, and parcel rate shopping. |
+| **[ShipHero](https://shiphero.com/)** | **~$250M Valuation** *(High-velocity DTC fulfillment leader)* | **$1,995/month** *(Standard Brand WMS, includes 5 users, unlimited orders/SKUs)* | **No free tier**; live guided scanner workflow trial for enterprise deals (no automated public self-serve trial) | High-speed mobile iOS barcode scanning, batch picking routes, multi-carrier label generation with 150+ carriers, customer returns portal, and 3PL client billing. |
+| **[Logiwa IO](https://www.logiwa.com/)** | **~$150M Valuation** *(Series B funded by NewView Capital, Valor)* | **$1,500/month** *(Volume-based fulfillment plan with unlimited users)* | **No free tier**; complimentary AI proof-of-concept (POC) demo for qualified high-volume warehouses (no self-serve free trial) | High-velocity DTC & 3PL WMS, AI order batching, algorithmic labor tracking, automated contract billing for multi-client 3PLs, and no-code rule automation. |
+| **[Fishbowl Warehouse](https://www.fishbowlinventory.com/)** | **~$100M Valuation** *(Acquired by Diversis Capital)* | **$229/month** *(Essentials Plan, billed annually; Advanced WMS starts from $595/mo)* | **No free tier**; 14-day full-access guided trial upon scheduling discovery with an onboarding specialist | Gold-standard QuickBooks integration, multi-location stock control, manufacturing BOM assembly, lot/serial traceability, and mobile handheld barcoding. |
 
 ---
 
-## 🤝 Contributing
+## 🟩 Open-Source Software 💻
 
-Contributions are welcome! If you know of an open-source Warehouse Management System (WMS) that should be listed here, please open a pull request with:
+Self-hosted, community-driven, and developer-friendly Warehouse Management Systems. Sorted in descending order by GitHub Star count. 🌟🔓
 
-- Project name and URL
-- Brief description (1–2 sentences)
-- Stack and license
-- Why it stands out
-
-Please ensure the project is actively maintained (releases within the last 12 months) and genuinely open-source. Note that the open-source WMS ecosystem is more limited than for some other categories; many production-grade options are ERP modules (Odoo, ERPNext) rather than standalone WMS platforms.
+| Software 📦 | Stars ⭐ | Stack & Framework ⚙️ | License 📜 | Best For 🎯 |
+|:---|:---|:---|:---|:---|
+| **[Odoo WMS (Community)](https://github.com/odoo/odoo)** | [![GitHub stars](https://img.shields.io/github/stars/odoo/odoo?style=social&color=white)](https://github.com/odoo/odoo/stargazers) | Python / PostgreSQL / JavaScript | LGPL-3.0 | Complete ERP-integrated inventory and warehouse logistics with barcode scanning, double-entry inventory, and automated replenishment. |
+| **[ERPNext (Stock & WMS)](https://github.com/frappe/erpnext)** | [![GitHub stars](https://img.shields.io/github/stars/frappe/erpnext?style=social&color=white)](https://github.com/frappe/erpnext/stargazers) | Python (Frappe) / MariaDB / Vue.js | GPL-3.0 | Modern, 100% open-source enterprise suite featuring multi-warehouse tracking, serialized batches, delivery notes, and stock reconciliation. |
+| **[InvenTree](https://github.com/inventree/InvenTree)** | [![GitHub stars](https://img.shields.io/github/stars/inventree/InvenTree?style=social&color=white)](https://github.com/inventree/InvenTree/stargazers) | Python / Django / React | MIT | Lightweight modular inventory and parts tracking designed for light manufacturing, assembly operations, and stockrooms. |
+| **[GreaterWMS](https://github.com/GreaterWMS/GreaterWMS)** | [![GitHub stars](https://img.shields.io/github/stars/GreaterWMS/GreaterWMS?style=social&color=white)](https://github.com/GreaterWMS/GreaterWMS/stargazers) | Python / Django / Rust / Vue (Quasar) | Apache-2.0 | High-performance standalone WMS supporting PDA scanners, mobile apps, multi-tenant 3PLs, cross-border e-commerce, and cold-chain logistics. |
+| **[ModernWMS](https://github.com/fjykTec/ModernWMS)** | [![GitHub stars](https://img.shields.io/github/stars/fjykTec/ModernWMS?style=social&color=white)](https://github.com/fjykTec/ModernWMS/stargazers) | .NET 8 / Vue.js 3 / TypeScript | MIT | Clean, minimalist cross-platform warehouse management system optimized for rapid SME inventory receipts, order dispatches, and location management. |
+| **[Asp.Net Core WMS](https://github.com/go2ismail/Asp.Net-Core-Inventory-Order-Management-System)** | [![GitHub stars](https://img.shields.io/github/stars/go2ismail/Asp.Net-Core-Inventory-Order-Management-System?style=social&color=white)](https://github.com/go2ismail/Asp.Net-Core-Inventory-Order-Management-System/stargazers) | .NET 9 / Vue.js / Clean Architecture | MIT | Headless API and Razor Pages architecture implementing CQRS, MediatR, and full order-to-dispatch warehouse workflows. |
+| **[wms-ruoyi](https://github.com/zccbbg/wms-ruoyi)** | [![GitHub stars](https://img.shields.io/github/stars/zccbbg/wms-ruoyi?style=social&color=white)](https://github.com/zccbbg/wms-ruoyi/stargazers) | Java (Spring Boot) / Vue.js / Element UI | MIT | Warehouse zone management, web printing (Lodop) for inbound/outbound notes, carrier management, and dynamic inventory dashboard kanbans. |
+| **[OpenBoxes](https://github.com/openboxes/openboxes)** | [![GitHub stars](https://img.shields.io/github/stars/openboxes/openboxes?style=social&color=white)](https://github.com/openboxes/openboxes/stargazers) | Groovy / Grails / MySQL | Eclipse Public License | Specialized healthcare supply chain & hospital warehouse system with lot expiry tracking, cold-chain monitoring, and replenishment requisitions. |
+| **[frePPLe](https://github.com/frePPLe/frepple)** | [![GitHub stars](https://img.shields.io/github/stars/frePPLe/frepple?style=social&color=white)](https://github.com/frePPLe/frepple/stargazers) | C++ / Python / PostgreSQL | AGPL-3.0 | Upstream supply chain planning, finite-capacity production scheduling, and warehouse inventory optimization algorithms. |
+| **[OpenWMS.org](https://github.com/openwms/org.openwms)** | [![GitHub stars](https://img.shields.io/github/stars/openwms/org.openwms?style=social&color=white)](https://github.com/openwms/org.openwms/stargazers) | Java (Spring Cloud) / Microservices | Apache-2.0 | Modular reference implementation of core warehouse transport management, storage locations, automated AS/RS interfaces, and picking. |
+| **[warehouse-inventory-system](https://github.com/siamon123/warehouse-inventory-system)** | [![GitHub stars](https://img.shields.io/github/stars/siamon123/warehouse-inventory-system?style=social&color=white)](https://github.com/siamon123/warehouse-inventory-system/stargazers) | PHP / MySQL / Bootstrap | MIT | Straightforward web-based inventory tracker with supplier management, sales/purchase order handling, and PDF invoice dispatch. |
+| **[OCA WMS (Odoo Addons)](https://github.com/OCA/wms)** | [![GitHub stars](https://img.shields.io/github/stars/OCA/wms?style=social&color=white)](https://github.com/OCA/wms/stargazers) | Python / Odoo Framework | AGPL-3.0 | Community-maintained advanced logistic modules extending native Odoo stock with complex wave picking, multi-step routing, and cross-dock logic. |
+| **[JeeWMS](https://github.com/erzhongxmu/JeeWMS)** | [![GitHub stars](https://img.shields.io/github/stars/erzhongxmu/JeeWMS?style=social&color=white)](https://github.com/erzhongxmu/JeeWMS/stargazers) | Java / Spring MVC / MyBatis / MySQL | Apache-2.0 | Enterprise Java WMS featuring wave picking, barcode generation, inventory valuation, and multi-warehouse stock allocations. |
+| **[myWMS](https://github.com/wms2/mywms)** | [![GitHub stars](https://img.shields.io/github/stars/wms2/mywms?style=social&color=white)](https://github.com/wms2/mywms/stargazers) | Java / JEE / WildFly | GPL-3.0 | Longstanding open-source WMS platform supporting manual and automated warehouse facilities, forklift terminals, and storage zone control. |
 
 ---
 
-## 📄 License
+## 📊 Comparison at a Glance 🔍
 
-This list is released under CC0 1.0 Universal (Public Domain). The software projects listed retain their respective licenses.
+| System 🏷️ | Deployment Model 🌐 | Architecture / Stack 🛠️ | Open Source? 🔓 | Free Tier / Trial? 🎁 | Best Operational Fit 🎯 |
+|:---|:---|:---|:---|:---|:---|
+| **Oracle NetSuite WMS** | Cloud SaaS | Multi-tenant ERP Cloud | ❌ Proprietary | ❌ (Sales Demo) | Standardized NetSuite ERP enterprises |
+| **Blue Yonder WMS** | Cloud SaaS | Microservices / AI Event Streaming | ❌ Proprietary | ❌ (Guided PoC) | Large global fulfillment networks & continuous flow |
+| **Infor CloudSuite WMS** | Cloud SaaS / Hybrid | AWS Multi-tenant Cloud | ❌ Proprietary | ❌ (Enterprise RFP) | 3PL logistics with labor & 3D visual analysis |
+| **Manhattan Active WM** | Cloud SaaS | Cloud-Native Microservices | ❌ Proprietary | ❌ (Sales Demo) | Massive, automated high-throughput mega distribution centers |
+| **Zoho Inventory** | Cloud SaaS | Cloud Web & Mobile App | ❌ Proprietary | ✅ (Free forever plan: 50 orders/mo) | SMB ecommerce sellers seeking budget-friendly multi-channel |
+| **Körber Infios** | Cloud / On-Premise | Modular Client-Server & Cloud | ❌ Proprietary | ❌ (Architect Walkthrough) | Automation-heavy sites integrating AMRs and voice picking |
+| **Deposco Bright Suite** | Cloud SaaS | Cloud Omnichannel Fulfillment | ❌ Proprietary | ❌ (Vendor Evaluation) | Fast-growth omnichannel retailers deploying AS/RS robotics |
+| **ShipHero** | Cloud SaaS | iOS Native Scanner App & Cloud | ❌ Proprietary | ❌ (Guided Demo) | Scanner-heavy DTC brands & scaling 3PL fulfillment hubs |
+| **Logiwa IO** | Cloud SaaS | Cloud-Native Microservices | ❌ Proprietary | ❌ (Free AI PoC) | High-volume B2C ecommerce & automated 3PL billing |
+| **Fishbowl Warehouse** | Cloud / On-Premise | Client-Server / Hosted | ❌ Proprietary | ❌ (14-Day Assisted Trial) | Manufacturers & distributors requiring QuickBooks sync |
+| **Odoo WMS (Community)** | Self-Hosted | Python / PostgreSQL | ✅ LGPL-3.0 | ✅ (100% Free Open Source) | Full ERP + double-entry inventory tracking |
+| **ERPNext** | Self-Hosted / Cloud | Python / Frappe / MariaDB | ✅ GPL-3.0 | ✅ (100% Free Open Source) | Modern open-source ERP with integrated stock & warehouse |
+| **InvenTree** | Self-Hosted | Python / Django / React | ✅ MIT | ✅ (100% Free Open Source) | Lightweight inventory & assembly part tracking |
+| **GreaterWMS** | Self-Hosted | Python / Django / Rust / Quasar | ✅ Apache-2.0 | ✅ (100% Free Open Source) | Mobile PDA-driven 3PL, pharma, and cross-border WMS |
+| **ModernWMS** | Self-Hosted | .NET 8 / Vue.js 3 | ✅ MIT | ✅ (100% Free Open Source) | Clean, rapid-install inventory and dispatch for SMEs |
+| **OpenBoxes** | Self-Hosted | Groovy / Grails / MySQL | ✅ EPL | ✅ (100% Free Open Source) | Hospitals, medical clinics, and public health supplies |
+| **frePPLe** | Self-Hosted | C++ / Python / PostgreSQL | ✅ AGPL-3.0 | ✅ (100% Free Open Source) | Upstream supply chain & production planning optimization |
+| **OpenWMS.org** | Self-Hosted | Java / Spring Boot Microservices | ✅ Apache-2.0 | ✅ (100% Free Open Source) | Java developers building custom modular WMS stacks |
 
 ---
 
-⭐ **If this list helped you discover a useful tool, please star the repo!** ⭐
+## 📈 Star History
+
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-Warehouse-Management-System-WMS&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-Warehouse-Management-System-WMS&type=date&legend=top-left)
+
+---
+
+## 💖 Support & Community 🙏
+
+Thank you so much for exploring this curated repository! If this guide helped you discover the right Warehouse Management System, optimize your distribution center logistics, or streamline your supply chain workflows, please consider showing your support:
+
+- ⭐ **Star this repository** to help other supply chain managers, warehouse operators, and software engineers discover it!
+- 🍴 **Fork and share** it with your engineering team, logistics community, and colleagues.
+- ☕ **Buy me a coffee / Sponsor**: If you appreciate this curated repository and would like to support continuous maintenance, new tool reviews, and active updates, please visit the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007). Every bit of support is deeply appreciated! ☕✨
+
+---
+
+## 🤝 Contributing 💡
+
+Contributions are warmly welcomed! If you know of an active open-source Warehouse Management System or an updated enterprise SaaS platform that should be included:
+
+1. Fork this repository. 🍴
+2. Ensure the platform or project is actively maintained and relevant to warehouse logistics, inventory control, or supply chain execution. 🔍
+3. For open-source projects, include the official GitHub Stars Badge (`https://img.shields.io/github/stars/<owner>/<repo>?style=social&color=white`) linking to its stargazers page. ⭐
+4. Submit a clear pull request with a concise overview of the platform, technology stack, and distinguishing features. 🚀
+
+---
+
+## 📄 License ⚖️
+
+This repository and curated list are released under the [Creative Commons Zero v1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/) (Public Domain). Respective trademarks, logos, and software projects belong to their individual owners. 🌐✨

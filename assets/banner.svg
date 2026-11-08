@@ -1,0 +1,242 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="360" style="background:#0a0f1d; border-radius:12px; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070c18" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#050a14" />
+    </linearGradient>
+
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="conveyorBelt" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0.1" />
+      <stop offset="50%" stop-color="#6366f1" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0.1" />
+    </linearGradient>
+
+    <linearGradient id="boxGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#1d4ed8" stop-opacity="0.8" />
+    </linearGradient>
+
+    <linearGradient id="boxGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0.8" />
+    </linearGradient>
+
+    <linearGradient id="laserBeam" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0" />
+      <stop offset="50%" stop-color="#10b981" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Glow Filters -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="subtleGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    <![CDATA[
+    @keyframes conveyorMove {
+      0% { transform: translateX(-160px); }
+      100% { transform: translateX(1260px); }
+    }
+    @keyframes pulseOpacity {
+      0%, 100% { opacity: 0.25; }
+      50% { opacity: 0.65; }
+    }
+    @keyframes floatParticle {
+      0%, 100% { transform: translateY(0px) scale(1); }
+      50% { transform: translateY(-10px) scale(1.1); }
+    }
+    @keyframes badgeGlow {
+      0%, 100% { stroke: #38bdf8; stroke-opacity: 0.4; }
+      50% { stroke: #c084fc; stroke-opacity: 0.9; }
+    }
+    @keyframes scanVertical {
+      0% { transform: translateY(0px); opacity: 0; }
+      15% { opacity: 0.85; }
+      85% { opacity: 0.85; }
+      100% { transform: translateY(110px); opacity: 0; }
+    }
+    @keyframes signalPulse {
+      0% { r: 3px; opacity: 0.9; }
+      100% { r: 16px; opacity: 0; }
+    }
+
+    .conveyor-stream {
+      animation: conveyorMove 12s linear infinite;
+    }
+    .grid-pulse {
+      animation: pulseOpacity 6s ease-in-out infinite;
+    }
+    .float-orb-1 {
+      animation: floatParticle 7s ease-in-out infinite;
+    }
+    .float-orb-2 {
+      animation: floatParticle 9s ease-in-out infinite reverse;
+    }
+    .hud-border {
+      animation: badgeGlow 4s ease-in-out infinite;
+    }
+    .laser-scanner {
+      animation: scanVertical 3.2s ease-in-out infinite;
+    }
+    .pulse-ring {
+      animation: signalPulse 2.4s ease-out infinite;
+    }
+    ]]>
+  </style>
+
+  <!-- Deep Base Background -->
+  <rect width="1200" height="360" rx="12" fill="url(#bgGrad)" />
+
+  <!-- Dynamic Ambient Glow Orbs -->
+  <g class="float-orb-1">
+    <circle cx="160" cy="90" r="130" fill="#38bdf8" opacity="0.07" filter="url(#glow)" />
+  </g>
+  <g class="float-orb-2">
+    <circle cx="1040" cy="270" r="150" fill="#818cf8" opacity="0.08" filter="url(#glow)" />
+  </g>
+
+  <!-- Geometric Grid & Warehouse Racks Matrix Pattern (Subtle Background) -->
+  <g class="grid-pulse" opacity="0.25" stroke="#334155" stroke-width="0.8">
+    <!-- Horizontal Grid Lines -->
+    <line x1="40" y1="60" x2="1160" y2="60" stroke-dasharray="4,8" />
+    <line x1="40" y1="120" x2="1160" y2="120" stroke-dasharray="4,8" />
+    <line x1="40" y1="180" x2="1160" y2="180" stroke-dasharray="4,8" />
+    <line x1="40" y1="240" x2="1160" y2="240" stroke-dasharray="4,8" />
+    <line x1="40" y1="300" x2="1160" y2="300" stroke-dasharray="4,8" />
+
+    <!-- Isometric Warehouse Racks Silhouette (Left Background) -->
+    <g transform="translate(60, 110)" stroke="#38bdf8" stroke-width="1.2" opacity="0.5">
+      <rect x="0" y="0" width="80" height="130" rx="2" fill="none" />
+      <line x1="0" y1="42" x2="80" y2="42" />
+      <line x1="0" y1="85" x2="80" y2="85" />
+      <!-- Cargo Pallets on Racks -->
+      <rect x="10" y="16" width="26" height="20" rx="2" fill="#1e293b" stroke="#38bdf8" stroke-width="0.8" />
+      <rect x="44" y="16" width="26" height="20" rx="2" fill="#1e293b" stroke="#38bdf8" stroke-width="0.8" />
+      <rect x="10" y="58" width="26" height="20" rx="2" fill="#1e293b" stroke="#818cf8" stroke-width="0.8" />
+      <rect x="44" y="58" width="26" height="20" rx="2" fill="#1e293b" stroke="#818cf8" stroke-width="0.8" />
+      <rect x="10" y="100" width="60" height="20" rx="2" fill="#1e293b" stroke="#10b981" stroke-width="0.8" />
+    </g>
+
+    <!-- Barcode / Smart Scanner Terminal (Right Background) -->
+    <g transform="translate(1040, 110)" stroke="#c084fc" stroke-width="1.2" opacity="0.5">
+      <rect x="0" y="0" width="90" height="130" rx="4" fill="#0f172a" />
+      <!-- Barcode Mockup -->
+      <line x1="15" y1="25" x2="15" y2="65" stroke-width="2" />
+      <line x1="22" y1="25" x2="22" y2="65" stroke-width="1" />
+      <line x1="28" y1="25" x2="28" y2="65" stroke-width="3" />
+      <line x1="36" y1="25" x2="36" y2="65" stroke-width="1" />
+      <line x1="42" y1="25" x2="42" y2="65" stroke-width="4" />
+      <line x1="52" y1="25" x2="52" y2="65" stroke-width="1.5" />
+      <line x1="60" y1="25" x2="60" y2="65" stroke-width="2" />
+      <line x1="68" y1="25" x2="68" y2="65" stroke-width="1" />
+      <line x1="75" y1="25" x2="75" y2="65" stroke-width="2.5" />
+
+      <!-- QR / Data Matrix Accent -->
+      <rect x="25" y="80" width="40" height="35" rx="2" fill="none" stroke="#10b981" stroke-width="1.2" />
+      <circle cx="35" cy="90" r="3" fill="#10b981" />
+      <circle cx="55" cy="90" r="3" fill="#10b981" />
+      <circle cx="45" cy="102" r="3" fill="#10b981" />
+
+      <!-- Dynamic Laser Scanner Beam -->
+      <g class="laser-scanner">
+        <line x1="5" y1="10" x2="85" y2="10" stroke="#10b981" stroke-width="2" filter="url(#glow)" />
+      </g>
+    </g>
+  </g>
+
+  <!-- Bottom Dynamic Animated Conveyor & AGV Track Layer (Positioned below text so never obscures title) -->
+  <g transform="translate(0, 318)">
+    <!-- Track line -->
+    <rect x="0" y="10" width="1200" height="4" fill="url(#conveyorBelt)" />
+    <!-- Dynamic Moving Smart Parcel / Inventory Stream -->
+    <g class="conveyor-stream">
+      <!-- Parcel 1 -->
+      <rect x="0" y="-8" width="32" height="18" rx="3" fill="url(#boxGrad1)" stroke="#38bdf8" stroke-width="1" />
+      <line x1="16" y1="-8" x2="16" y2="10" stroke="#bae6fd" stroke-width="0.8" />
+      <!-- Parcel 2 -->
+      <rect x="180" y="-10" width="38" height="20" rx="3" fill="url(#boxGrad2)" stroke="#c084fc" stroke-width="1" />
+      <line x1="199" y1="-10" x2="199" y2="10" stroke="#e9d5ff" stroke-width="0.8" />
+      <!-- Parcel 3 -->
+      <rect x="360" y="-6" width="28" height="16" rx="2" fill="#1e293b" stroke="#10b981" stroke-width="1" />
+      <!-- Parcel 4 -->
+      <rect x="540" y="-9" width="34" height="19" rx="3" fill="url(#boxGrad1)" stroke="#38bdf8" stroke-width="1" />
+      <!-- Parcel 5 -->
+      <rect x="720" y="-7" width="30" height="17" rx="2" fill="url(#boxGrad2)" stroke="#a855f7" stroke-width="1" />
+      <!-- Parcel 6 -->
+      <rect x="900" y="-10" width="36" height="20" rx="3" fill="#1e293b" stroke="#38bdf8" stroke-width="1" />
+    </g>
+  </g>
+
+  <!-- FOREGROUND LAYER: Content Guaranteed High Contrast, Clear Hierarchy & Legibility -->
+
+  <!-- Top Category Chip / Pill -->
+  <g transform="translate(600, 48)">
+    <rect x="-195" y="-14" width="390" height="28" rx="14" fill="#1e1b4b" class="hud-border" stroke="#6366f1" stroke-width="1.2" />
+    <circle cx="-172" cy="0" r="4.5" fill="#38bdf8" />
+    <text x="-158" y="4.5" fill="#cbd5e1" font-size="11.5" font-weight="600" letter-spacing="1.2">SUPPLY CHAIN &amp; WAREHOUSE AUTOMATION</text>
+  </g>
+
+  <!-- Main Hero Title -->
+  <g transform="translate(600, 118)">
+    <text text-anchor="middle" font-size="40" font-weight="800" letter-spacing="-0.5" fill="url(#titleGrad)" filter="url(#subtleGlow)">
+      Awesome Warehouse Management System
+    </text>
+  </g>
+
+  <!-- Secondary Title Line -->
+  <g transform="translate(600, 162)">
+    <text text-anchor="middle" font-size="26" font-weight="700" letter-spacing="0.5" fill="#f8fafc">
+      Enterprise SaaS &amp; Open-Source WMS Platforms
+    </text>
+  </g>
+
+  <!-- Subtitle / Value Proposition Description -->
+  <g transform="translate(600, 204)">
+    <text text-anchor="middle" font-size="14.5" font-weight="400" fill="#94a3b8" letter-spacing="0.2">
+      Curated guide to tier-1 cloud WMS, fulfillment automation, inventory control &amp; self-hosted solutions
+    </text>
+  </g>
+
+  <!-- Feature Pills / Badges in Foreground -->
+  <g transform="translate(600, 262)">
+    <!-- Pill 1: Inventory & Fulfillment -->
+    <g transform="translate(-270, 0)">
+      <rect x="-75" y="-15" width="150" height="30" rx="15" fill="#1e293b" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.6" />
+      <text x="0" y="5" text-anchor="middle" font-size="11.5" font-weight="600" fill="#38bdf8">📦 Smart Inventory</text>
+    </g>
+
+    <!-- Pill 2: 3PL & Fulfillment -->
+    <g transform="translate(-90, 0)">
+      <rect x="-80" y="-15" width="160" height="30" rx="15" fill="#1e293b" stroke="#818cf8" stroke-width="1" stroke-opacity="0.6" />
+      <text x="0" y="5" text-anchor="middle" font-size="11.5" font-weight="600" fill="#a5b4fc">🚚 3PL &amp; Order Stream</text>
+    </g>
+
+    <!-- Pill 3: Autonomous Robotics & AI -->
+    <g transform="translate(95, 0)">
+      <rect x="-80" y="-15" width="160" height="30" rx="15" fill="#1e293b" stroke="#c084fc" stroke-width="1" stroke-opacity="0.6" />
+      <text x="0" y="5" text-anchor="middle" font-size="11.5" font-weight="600" fill="#e879f9">🤖 AI &amp; AMR Orchestration</text>
+    </g>
+
+    <!-- Pill 4: Open Source Freedom -->
+    <g transform="translate(275, 0)">
+      <rect x="-75" y="-15" width="150" height="30" rx="15" fill="#1e293b" stroke="#34d399" stroke-width="1" stroke-opacity="0.6" />
+      <text x="0" y="5" text-anchor="middle" font-size="11.5" font-weight="600" fill="#34d399">⚡ Open-Source Core</text>
+    </g>
+  </g>
+</svg>
